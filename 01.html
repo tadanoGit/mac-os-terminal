@@ -6,9 +6,21 @@
   <title>Document</title>
 </head>
 <body>
-  01
+<script>
 
+'use strict'
 
-  取り込み
+const indexOf = (arr,val) => {
+  for(let i in arr){
+    if(arr[i] === val){
+      return i;
+    }
+  }
+  return -1;
+}
+
+console.log(indexOf([1,2,3,4,5,6,7,8,9,10],10));// -> 9
+
+</script>
 </body>
 </html>
